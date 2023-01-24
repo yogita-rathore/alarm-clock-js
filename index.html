@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Head -->
+<head>
+	<title>My Alarm Clock</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!-- Body -->
+<body>
+	<!-- Clock with current time -->
+	<center>
+		<div class="main-container">
+			<section id="clock">
+				<h1 id="current-time">12:00:00</h1>
+				<h2 id="current-day-date">12/12/1212 - Monday</h2>
+			</section>
+
+			<section id="alarm-form">
+				<form>
+					<select id="select-hours"></select>
+					<select id="select-minutes"></select>
+					<select id="select-seconds"></select>
+					<select id="select-am-pm">
+						<option value="am">AM</option>
+						<option value="pm">PM</option>
+					</select>
+					<button id="set-alarm-btn" type="submit">Set Alarm</button>
+				</form>
+			</section>
+
+			<section id="alarms-list-container">
+				<h1 id="alarms-title">Active Alarms</h1>
+				<div id="alarms-list"></div>
+			</section>
+		</div>
+	</center>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
